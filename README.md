@@ -9,8 +9,9 @@ Este es un proyecto de práctica desarrollado como estudiante de programación, 
 - **Event Handling:** Manejo avanzado de eventos en el DOM para una navegación sin recargas.
 
 ## 🛠️ Tecnologías Usadas
-- **HTML5** & **CSS3** (Variables y Flexbox).
-- **JavaScript (ES6+)**: Fetch API, Async/Await, y manipulación del DOM.
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/javascript-%23F7DF1E.svg?style=for-the-badge&logo=javascript&logoColor=black)
 
 ## 📂 Estructura del Proyecto
 - `/js`: Lógica de la tienda (`productos.js`).
