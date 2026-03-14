@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda - Aeternum Tech</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+
+    <header class="header-tech">
+
+        <div class="nav-links">
+            <a href="index.html" class="btn-registro">INICIO</a>
+            <a href="tienda.html">TIENDA</a>
+        </div>
+
+        <div class="nav-search-center">
+        <div class="search-bar">
+            <input type="text" id="input-buscador" placeholder="¿Qué hardware estás buscando?">
+            <button type="submit">🔍</button>
+        </div>
+    </div>
+
+         <div class="nav-links-right">
+        <a href="#">FAQ</a>
+        <a href="#">CARRITO <span id="cuenta-carrito">0</span></a>
+    </div>
+
+    
+
+    </header>
+
+    <div class="tienda-layout">
+
+    <aside class="filtros-sidebar">
+        <h3 class="sidebar-title">| CATEGORÍAS</h3>
+        
+        <ul id="menu-categorias">
+            <li><button class="btn-categoria active" id="todos">Todos los productos</button></li>
+            <li><button class="btn-categoria" id="Combos">Combos Gaming</button></li>
+            
+            <li class="categoria-desplegable">
+                <button class="btn-categoria" id="Procesadores">
+                    Procesadores <span class="flecha">⌵</span>
+                </button>
+                <ul class="sub-menu" id="sub-procesadores">
+                    <li><button class="btn-sub-categoria" id="AMD">AMD</button></li>
+                    <li><button class="btn-sub-categoria" id="Intel">Intel</button></li>
+                </ul>
+            </li>
+            <li class="categoria-desplegable">
+                <button class="btn-categoria" id="Placas-de-Video">
+                     Placas de Video <span class="flecha">⌵</span>
+                    </button>
+                <ul class="sub-menu" id="placas-de-video">
+                    <li><button class="btn-sub-categoria" id="Nvidia">Nvidia</button></li>
+                    <li><button class="btn-sub-categoria" id="AMD-GPU">AMD</button></li>
+                    <li><button class="btn-sub-categoria" id="Intel">Intel</button></li>
+                </ul>
+            </li>
+            <li class="categoria-desplegable">
+                <button class="btn-categoria" id="Motherboard">
+                     Placas de Video <span class="flecha">⌵</span>
+                    </button>
+                <ul class="sub-menu" id="motherboards">
+                    <li><button class="btn-sub-categoria" id="ASRock-Mother">ASRock</button></li>
+                    <li><button class="btn-sub-categoria" id="MSI-Mother">MSI</button></li>
+                    <li><button class="btn-sub-categoria" id="Asus">Asus</button></li>
+                    <li><button class="btn-sub-categoria" id="Gigabyte-Mother">Gigabyte</button></li>
+                </ul>
+            </li>
+
+            <li><button class="btn-categoria" id="Notebooks">Notebooks</button></li>
+        </ul>
+
+        <div class="filtro-precio">
+            <h3 class="sidebar-title">FILTRAR PRECIO</h3>
+            <input type="range" class="range-gold" min="0" max="10000">
+        </div>
+    </aside>
+
+    <main class="productos-grid" id="contenedor-productos">
+        </main>
+
+</div>
+
+<div id="carrito-lateral" class="carrito-modal">
+    <div class="carrito-header">
+        <h3>Tu Carrito</h3>
+        <button id="cerrar-carrito">X</button>
+    </div>
+    <div id="carrito-productos">
+        <p class="carrito-vacio">El carrito está vacío</p>
+    </div>
+    <div class="carrito-footer">
+        <p>Total: <span id="total-carrito">$0</span></p>
+        <button class="btn-checkout">Finalizar Compra</button>
+    </div>
+</div>
+
+
+<div id="carrito-lateral" class="carrito-modal">
+        </div>
+
+    
+    <script src="js/productos.js"></script>
+</body>
+
+
+</html>
+
