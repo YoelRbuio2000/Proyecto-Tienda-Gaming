@@ -12,7 +12,7 @@
         "id": "gpu-01",
         "nombre": "GeForce RTX 4080 Super",
         "precio": 1200,
-        "imagen": "assets/geforce-rtx-4080-super-og-1200x630.jpg",
+        "imagen": "assets/Grafica_RTX_4090.jpg",
         "categoria": "Placas de Video",
         "marca": "Nvidia"
     },
