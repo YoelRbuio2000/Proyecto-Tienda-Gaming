@@ -3,7 +3,7 @@
         "id": "cpu-01",
         "nombre": "AMD Ryzen 9 9900X",
         "precio": 550,
-        "imagen": "assets/AMD RYZEN 9 9900X.jpg",
+        "imagen": "/assets/AMD RYZEN 9 9900X.jpg",
         "categoria": "Procesadores",
         "marca": "AMD" 
     
@@ -12,7 +12,7 @@
         "id": "gpu-01",
         "nombre": "GeForce RTX 4080 Super",
         "precio": 1200,
-        "imagen": "assets/Grafica_RTX_4090.jpg",
+        "imagen": "/assets/Grafica_RTX_4090.jpg",
         "categoria": "Placas de Video",
         "marca": "Nvidia"
     },
@@ -20,7 +20,7 @@
     "id": "moth-01",
     "nombre": "Asus ROG Strix B650-A",
     "precio": 280,
-    "imagen": "assets/Asus ROG Strix B650-A.jpg",
+    "imagen": "/assets/Asus ROG Strix B650-A.jpg",
     "categoria": "Motherboards",
     "marca": "Asus" 
 }
