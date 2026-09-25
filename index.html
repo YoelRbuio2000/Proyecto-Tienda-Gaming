@@ -3,107 +3,123 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyecto Tienda</title>
-    <link rel="stylesheet" href="style/style.css">
+    <title>Aeternum Tech - Tienda Gaming</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<header class="header-tech">
-    <div class="nav-links-left">
-        <a href="#" class="btn-registro">REGÍSTRATE</a>
-        <a href="tienda.html">TIENDA</a>
-    </div>
 
-    <div class="nav-search-center">
-        <div class="search-bar">
-            <input type="text" placeholder="¿Qué hardware estás buscando?">
-            <button type="submit">🔍</button>
+    <!-- Barra principal  -->
+    <header class="header-tech">
+        <nav class="nav-links-left">
+            <a href="register.html" class="btn-registro">REGÍSTRATE</a>
+            <a href="login.html" class="btn-login">INGRESAR</a>
+            <a href="tienda.html">TIENDA</a>
+        </nav>
+
+        <div class="nav-search-center">
+            <form class="search-bar" role="search">
+                <input type="search" placeholder="¿Qué hardware estás buscando?" aria-label="Buscar hardware">
+                <button type="submit" aria-label="Buscar">🔍</button>
+            </form>
         </div>
-    </div>
 
-    <div class="nav-links-right">
-        <a href="#">FAQ</a>
-        <a href="#">CARRITO <span id="cuenta-carrito">0</span></a>
-    </div>
-</header>
-<main>
+        <nav class="nav-links-right">
+            <a href="#">FAQ</a>
+            <a href="#">CARRITO <span id="cuenta-carrito">0</span></a>
+        </nav>
+    </header>
 
-<section class="banner-aeternum">
-    <div class="banner-overlay">
-        <div class="banner-content">
-            <p class="banner-subtitle">EDICIÓN LIMITADA</p>
-            <h1 class="banner-title">NUEVO SETUP GAMING 'AETERNUM'</h1>
-            <p class="banner-description">Rendimiento legendario con la última arquitectura.</p>
-            <div class="banner-actions">
-                <a href="#" class="btn-primary">VER DETALLES</a>
-                <a href="#" class="btn-secondary">COMPRAR AHORA</a>
+    <!-- Contenido principal -->
+    <main>
+
+        <!-- Banner -->
+        <section class="banner-aeternum" aria-labelledby="banner-title">
+            <div class="banner-overlay">
+                <div class="banner-content">
+                    <p class="banner-subtitle">EDICIÓN LIMITADA</p>
+                    <h1 id="banner-title" class="banner-title">NUEVO SETUP GAMING 'AETERNUM'</h1>
+                    <p class="banner-description">Rendimiento legendario con la última arquitectura.</p>
+
+                    <div class="banner-actions">
+                        <a href="#" class="btn-primary">VER DETALLES</a>
+                        <a href="#" class="btn-secondary">COMPRAR AHORA</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Productos destacados -->
+        <section class="productos-destacados" aria-labelledby="destacados-title">
+            <h2 id="destacados-title" class="visually-hidden">Productos destacados</h2>
+
+            <article class="producto-card">
+                <div class="producto-img">
+                    <img src="/assets/PC_Blue_Etherium.jpg" alt="PC Gaming Aeternum con iluminación azul y componentes RGB">
+                </div>
+                <div class="producto-texto">
+                    <h3>PC GAMING 'AETERNUM'</h3>
+                    <p class="precio">$3.000 USD</p>
+                </div>
+            </article>
+
+            <article class="producto-card">
+                <div class="producto-img">
+                    <img src="/assets/Grafica_RTX_4090.jpg" alt="Tarjeta gráfica NVIDIA RTX 4080 Super">
+                </div>
+                <div class="producto-texto">
+                    <h3>NVIDIA RTX 4090</h3>
+                    <p class="estado">DISPONIBLE AHORA</p>
+                    <p class="precio">$1.300 USD</p>
+                </div>
+            </article>
+
+            <article class="producto-card">
+                <div class="producto-img">
+                    <img src="/assets/AMD RYZEN 9 9900X.jpg" alt="Procesador AMD Ryzen 9 9900X">
+                </div>
+                <div class="producto-texto">
+                    <h3>AMD RYZEN 9 9900X</h3>
+                    <p class="estado-nuevo">NUEVO LANZAMIENTO</p>
+                    <p class="precio">$500 USD</p>
+                </div>
+            </article>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+
+    <footer class="footer-container">
+        <div class="footer-info">
+            <h2>| YOEL RUBIO TECH</h2>
+            <p>Estudiante de Programación y dibujante amateur en tiempo libre. Este es un proyecto con el cual experimento para aprender a crear páginas web estéticas y funcionales. (Toda imagen usada como asset fue sacada de Google)</p>
+            <div class="social-links">
+                <a href="#" class="social-icon">IG</a>
+                <a href="https://www.linkedin.com/in/yoel-rubio-b21730275/" class="social-icon">Linkedin</a>
+                <a href="https://github.com/YoelRbuio2000" class="social-icon">GH</a>
             </div>
         </div>
-    </div>
-</section>
-</main>
-<section class="productos-destacados">
-    <div class="producto-card">
-        <div class="producto-img">
-            <img src="assets/PC_Blue_Etherium.jpg" alt="PC Aeternum">
-        </div>
-        <div class="producto-texto">
-            <h4>PC GAMING 'AETERNUM'</h4>
-            <p class="precio">$3.000 USD</p>
-        </div>
-    </div>
 
-    <div class="producto-card">
-        <div class="producto-img">
-            <img src="assets/geforce-rtx-4080-super-og-1200x630.jpg" alt="NVIDIA RTX 4080">
+        <div class="footer-services">
+            <h2>| NUESTROS SERVICIOS</h2>
+            <ul>
+                <li class="service-item"><span>01</span> Armado de Setups Custom</li>
+                <li class="service-item"><span>02</span> Mantenimiento Preventivo</li>
+                <li class="service-item"><span>03</span> Diseño de Identidad Visual</li>
+                <li class="service-item"><span>04</span> Consultoría de Componentes</li>
+            </ul>
         </div>
-        <div class="producto-texto">
-            <h4>NVIDIA RTX 4080</h4>
-            <p class="estado">DISPONIBLE AHORA</p>
-            <p class="precio">$1.300 USD</p>
-        </div>
-    </div>
 
-    <div class="producto-card">
-        <div class="producto-img">
-            <img src="assets/AMD RYZEN 9 9900X.jpg" alt="AMD RYZEN 9">
+        <div class="footer-contact">
+            <h2>| CONTACTA CON NOSOTROS</h2>
+            <form class="contact-form" aria-label="Formulario de contacto">
+                <input type="text" placeholder="Tu Nombre" required aria-required="true">
+                <input type="email" placeholder="Tu Correo" required aria-required="true">
+                <textarea placeholder="¿En qué podemos ayudarte?" required aria-required="true"></textarea>
+                <button type="submit" class="btn-send">ENVIAR MENSAJE</button>
+            </form>
         </div>
-        <div class="producto-texto">
-            <h4>AMD RYZEN 9 9900X</h4>
-            <p class="estado-nuevo">NUEVO LANZAMIENTO</p>
-            <p class="precio">$500</p>
-        </div>
-    </div>
-</section>
-<section class="footer-container">
-    <div class="footer-info">
-        <h3>| YOEL RUBIO TECH</h3>
-        <p>Estudiante de Programacion y dibujante amateur en tiempo libre.
-            Este es un proyecto con el cual experimento para aprender a como crear paginas web esteticas y funcionales.
-            (Toda imagen usada como asset fue sacada de Google)</p>
-        <div class="social-links">
-    <a href="#" class="social-icon">IG</a>
-    <a href="#" class="social-icon">FB</a>
-    <a href="#" class="social-icon">GH</a>
-</div>
-    </div>
+    </footer>
 
-    <div class="footer-services">
-        <h3>| NUESTROS SERVICIOS</h3>
-        <div class="service-item"><span>01</span> Armado de Setups Custom</div>
-        <div class="service-item"><span>02</span> Mantenimiento Preventivo</div>
-        <div class="service-item"><span>03</span> Diseño de Identidad Visual</div>
-        <div class="service-item"><span>04</span> Consultoría de Componentes</div>
-    </div>
-
-    <div class="footer-contact">
-        <h3>| CONTACTA CON NOSOTROS</h3>
-        <form class="contact-form">
-            <input type="text" placeholder="Tu Nombre">
-            <input type="email" placeholder="Tu Correo">
-            <textarea placeholder="¿En qué podemos ayudarte?"></textarea>
-            <button type="submit" class="btn-send">ENVIAR MENSAJE</button>
-        </form>
-    </div>
-</section>
 </body>
 </html>

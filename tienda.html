@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tienda - Aeternum Tech</title>
-    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
 
@@ -61,7 +61,7 @@
             </li>
             <li class="categoria-desplegable">
                 <button class="btn-categoria" id="Motherboard">
-                     Placas de Video <span class="flecha">⌵</span>
+                     Motherboard <span class="flecha">⌵</span>
                     </button>
                 <ul class="sub-menu" id="motherboards">
                     <li><button class="btn-sub-categoria" id="ASRock-Mother">ASRock</button></li>
@@ -74,10 +74,25 @@
             <li><button class="btn-categoria" id="Notebooks">Notebooks</button></li>
         </ul>
 
-        <div class="filtro-precio">
-            <h3 class="sidebar-title">FILTRAR PRECIO</h3>
-            <input type="range" class="range-gold" min="0" max="10000">
+       <div class="filtro-precio">
+    <h3 class="sidebar-title">| FILTRAR PRECIO</h3>
+    
+    <div class="price-inputs">
+        <div class="price-field">
+            <span>$</span>
+            <input type="number" id="precio-min" placeholder="Mínimo" min="0">
         </div>
+        
+        <span class="price-separator">–</span>
+        
+        <div class="price-field">
+            <span>$</span>
+            <input type="number" id="precio-max" placeholder="Máximo" min="0">
+        </div>
+    </div>
+    
+    <button id="btn-filtrar-precio" class="btn-filtrar">Aplicar</button>
+</div>
     </aside>
 
     <main class="productos-grid" id="contenedor-productos">
@@ -98,15 +113,9 @@
         <button class="btn-checkout">Finalizar Compra</button>
     </div>
 </div>
-
-
-<div id="carrito-lateral" class="carrito-modal">
-        </div>
-
     
     <script src="js/productos.js"></script>
 </body>
 
 
 </html>
-
