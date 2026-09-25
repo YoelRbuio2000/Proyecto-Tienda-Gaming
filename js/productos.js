@@ -41,7 +41,7 @@ function dibujarTienda(lista) {
         const article = document.createElement("div");
         article.className = "product-card";
         article.innerHTML = `
-            <img src="${p.imagen}" alt="${p.nombre}">
+            <img src="../${p.imagen}" alt="${p.nombre}">
             <div class="product-info">
                 <h4>${p.nombre}</h4>
                 <p class="precio">$${p.precio} USD</p>
