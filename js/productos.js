@@ -32,7 +32,7 @@ function guardarCarrito() {
 
 async function iniciarTienda() {
     try {
-        const res = await fetch("http://localhost:3000/api/productos");
+        const res = await fetch("https://proyecto-tienda-gaming-production.up.railway.app/api/productos");
         catalogo = await res.json();
         dibujarTienda(catalogo);
     } catch (err) {
