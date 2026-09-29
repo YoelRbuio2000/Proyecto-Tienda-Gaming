@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar sesión - Aeternum Tech</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="header-tech">
+        <div class="nav-links">
+            <a href="index.html" class="btn-registro">INICIO</a>
+            <a href="tienda.html">TIENDA</a>
+        </div>
+        <div class="nav-links-right">
+            <a href="register.html">REGISTRATE</a>
+        </div>
+    </header>
+
+    <div class="auth-container">
+        <h1>Iniciar sesión</h1>
+        <div id="mensaje" class="mensaje"></div>
+
+        <form id="form-login">
+            <input type="email" id="email" placeholder="Correo electrónico" required>
+            <input type="password" id="password" placeholder="Contraseña" required>
+            <button type="submit">Entrar</button>
+        </form>
+
+        <p class="auth-link">
+            ¿No tenés cuenta? <a href="register.html">Registrate</a>
+        </p>
+    </div>
+
+    <script src="js/auth.js"></script>
+</body>
+</html>
